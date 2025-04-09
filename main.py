@@ -1,3 +1,18 @@
+from flask import Flask
+from threading import Thread
+
+# Start dummy web server for Render
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is running!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+# Run in a separate thread
+Thread(target=run).start()
 ﻿import json
 import os
 from dotenv import load_dotenv
