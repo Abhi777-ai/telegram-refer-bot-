@@ -3,7 +3,7 @@ services:
     name: telegram-refer-bot
     env: python
     buildCommand: pip install -r requirement.txt
-    startCommand: python newbot.py
+    startCommand: python main.py
     envVars:
       - key: BOT_TOKEN
         value: 7804808005:AAHCvKgI8wfFFyA3IvcXoJ-zRyUwTvrsSFs
