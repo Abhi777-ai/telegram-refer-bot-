@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-refer-bot
+    env: python
+    buildCommand: pip install -r requirement.txt
+    startCommand: python newbot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7804808005:AAHCvKgI8wfFFyA3IvcXoJ-zRyUwTvrsSFs
+      - key: CHANNEL_1
+        value: partimejobqq
+      - key: CHANNEL_2
+        value: whatsappfileqqq
